@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+           <div class="col-md-3"></div>
+           <div class="col-md-6">
+              <h1 id="message">
+                  I want to be changed ._.
+              </h1>
+              <img id="myImage" src="imagethings/monster.jfif">
+           </div>
+           <div class="col-md-3"></div>
+        </div>
+     </div>
+     <div class="button">
+        <button class="btn btn-warning" onclick=before();>
+            <h2>Click Here :D</h2>
+        </button>
+     </div>
+
+    <script>
+    function before(){
+        document.getElementById('myImage')
+        .src="imagethings/princess.png";
+        document.getElementById('message')
+        .innerHTML="Yaay! thx ^-^";
+    }
+    </script>
+    <style>
+        #myImage{
+            width: 300px;
+            margin-left: 15px;
+        }
+        h1{
+            color: rebeccapurple;
+        }
+        button{
+            padding: 0px 100px 0px 100px;
+            margin-right: 10px;
+        }
+        body{
+            margin-left: 640px;
+            margin-top: 150px;
+        }
+    </style>
+</body>
+</html>
