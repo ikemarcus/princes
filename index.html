@@ -18,13 +18,17 @@
            </div>
            <div class="col-md-3"></div>
         </div>
-     </div>
-     <div class="button">
+    </div>
+    <div class="button">
         <button class="btn btn-warning" onclick=before();>
             <h2>Click Here :D</h2>
         </button>
-     </div>
-
+    </div>
+    <div class="button">
+        <button class="btn btn-warning" type="submit" onClick="refreshPage()">
+            <h2 style="margin-right: 13px; margin-left: 19px;">Start over</h2>
+        </button>
+    </div>
     <script>
     function before(){
         document.getElementById('myImage')
@@ -32,6 +36,9 @@
         document.getElementById('message')
         .innerHTML="Yaay! thx ^-^";
     }
+    function refreshPage(){
+        window.location.reload();
+    } 
     </script>
     <style>
         #myImage{
