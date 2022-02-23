@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
     <body class="bg-info">
     <div class="jumbotron text-center">
@@ -29,10 +30,52 @@
         <div>
             <img class="image" src="imagethings/R.png">
         </div>
-    </div> 
+            <div class="well">
+                <p>this is a unordered list:</p>
+                <ul>
+                    <li>Tomato</li>
+                    <li>Brinjal</li>
+                    <li>Broccoli</li>
+                </ul>
+            </div>
+            <div class="well">
+                <p>this is a ordered list:</p>
+                <ol>
+                    <li>Kiwi</li>
+                    <li>Apple</li>
+                    <li>Mango</li>
+                </ol>
+            </div>
+        <div class="custom-control custom-radio radiobtn">
+            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+            <label class="custom-control-label" for="defaultChecked">radio button 1</label>
+        </div>
+        <div class="custom-control custom-radio radiobtn">
+            <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios" checked>
+            <label class="custom-control-label" for="defaultChecked">radio button 2</label>
+        </div>
+        <div class="form-check check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" unchecked/>
+            <label class="form-check-label" for="flexCheckChecked">checkbox 1</label>
+        </div>
+        <div class="form-check check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked/>
+            <label class="form-check-label" for="flexCheckChecked">checkbox 2</label>
+        </div>
+        <div class="form-outline formthing">
+            <input type="text" id="form12" class="form-control" placeholder="placeholder text .-.">
+        </div>
+        <button class='btn btn-lg ' style='background-color:lightblue; margin-top: 5px;'> 
+            <div style='text-align:center;'><i class="fa fa-coffee"></i></div>  
+              I need more coffee
+        </button>
 </body>
 
 <style>
+    .well{
+        margin: 6px;
+    }
+
     .text-purple{
         color: #9932cc;
     }
@@ -45,5 +88,17 @@
         width: 100px;
         border: 10px solid black;
         border-style: dashed;
+    }
+
+    .radiobtn{
+        padding: 2px
+    }
+
+    .check{
+        padding: 2px;
+    }
+
+    .formthing{
+        margin-right: 85%;
     }
 </style>
